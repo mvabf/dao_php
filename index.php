@@ -25,10 +25,17 @@ require_once('config.php');
 // $aluno->insert();
 // echo $aluno;
 
+// Atualizando um usuário no banco a partir dos parametros
+// $usuario = new Usuario();
+// $usuario->loadById(8);
+// $usuario->update("tommyLEE", "motleycrue123");
+// cho $usuario;
+
+// Deletando usuário do banco
+
 $usuario = new Usuario();
-$usuario->loadById(8);
 
-$usuario->update("tommyLEE", "motleycrue123");
-
+$usuario->loadById(7);
+$usuario->delete();
 echo $usuario;
 

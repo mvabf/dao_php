@@ -7,6 +7,11 @@ class Usuario {
     private $dessenha;
     private $dtcadastro;
 
+    public function __construct($login = "", $password = "") {
+        $this->deslogin = $login;
+        $this->dessenha = $password;
+    }
+
     public function getIdusuario() {
         return $this->idusuario;
     }

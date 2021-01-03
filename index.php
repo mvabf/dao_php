@@ -32,10 +32,9 @@ require_once('config.php');
 // cho $usuario;
 
 // Deletando usuário do banco
+// $usuario = new Usuario();
+// $usuario->loadById(7);
+// $usuario->delete();
+// echo $usuario;
 
-$usuario = new Usuario();
-
-$usuario->loadById(7);
-$usuario->delete();
-echo $usuario;
 

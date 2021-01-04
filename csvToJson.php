@@ -30,5 +30,5 @@ if (file_exists($filename)) {
 
     fclose($file);
 
-    echo json_encode($data);
+    echo str_replace('\r\n', '', json_encode($data));
 }
